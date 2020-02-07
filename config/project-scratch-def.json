@@ -1,0 +1,25 @@
+{
+  "orgName": "lukeDev2020",
+  "edition": "Enterprise",
+  "country": "AU",
+  "features": [
+    "Communities",
+    "PersonAccounts"
+  ],
+  "settings": {
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "securitySettings": {
+      "sessionSettings": {
+        "sessionTimeout": "TwelveHours"
+      }
+    },
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": true
+    }
+  }
+}

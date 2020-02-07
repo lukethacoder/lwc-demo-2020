@@ -1,0 +1,25 @@
+{
+  "name": "luke-dev-2020",
+  "version": "0.0.1",
+  "description": "just a little lwc demo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "lwc-jest",
+    "test:unit:debug": "lwc-jest --debug",
+    "test:unit:watch": "lwc-jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gr8Gatsby/lwc-workshop-master.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gr8Gatsby/lwc-workshop-master/issues"
+  },
+  "homepage": "https://github.com/Gr8Gatsby/lwc-workshop-master#readme",
+  "devDependencies": {
+    "@salesforce/lwc-jest": "^0.5.4"
+  }
+}
