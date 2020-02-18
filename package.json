@@ -1,9 +1,15 @@
 {
-  "name": "luke-dev-2020",
+  "name": "lukedev2020",
   "version": "0.0.1",
   "description": "just a little lwc demo.",
   "main": "index.js",
   "scripts": {
+    "dx:create": "sfdx force:org:create -s -f config/project-scratch-def.json -a luke-march-2020",
+    "dx:list": "sfdx force:org:list",
+    "dx:open": "sfdx force:org:open -u luke-march-2020",
+    "dx:push": "sfdx force:source:push",
+    "dx:pull": "sfdx force:source:pull",
+    "dx:retrieve": "sfdx force:source:retrieve -m LightningComponentBundle -u lukeDev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:unit": "lwc-jest",
     "test:unit:debug": "lwc-jest --debug",

@@ -16,10 +16,10 @@
       }
     },
     "lightningExperienceSettings": {
-      "enableS1DesktopEnabled": true
+      "enableS1DesktopEnabled": false
     },
     "mobileSettings": {
-      "enableS1EncryptedStoragePref2": true
+      "enableS1EncryptedStoragePref2": false
     }
   }
 }
