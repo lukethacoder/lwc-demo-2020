@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gr8Gatsby/lwc-workshop-master.git"
+    "url": "git+https://github.com/lukethacoder/lwc-demo-2020.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Gr8Gatsby/lwc-workshop-master/issues"
+    "url": "https://github.com/lukethacoder/lwc-demo-2020/issues"
   },
-  "homepage": "https://github.com/Gr8Gatsby/lwc-workshop-master#readme",
+  "homepage": "https://github.com/lukethacoder/lwc-demo-2020#readme",
   "devDependencies": {
     "@salesforce/lwc-jest": "^0.5.4"
   }
