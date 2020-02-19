@@ -2,7 +2,14 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/messageViewer": [
+                "messageViewer/messageViewer.js"
+            ],
+            "c/messageSingle": [
+                "messageSingle/messageSingle.js"
+            ]
+        }
     },
     "include": [
         "**/*",

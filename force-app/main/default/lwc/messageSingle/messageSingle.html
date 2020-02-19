@@ -1,0 +1,18 @@
+<template>
+  <li class={msgWrapperClass}>
+    <div class="slds-chat-message">
+      <div class="slds-chat-message__body">
+        <div class={msgClass}>
+          <span>{msgText}</span>
+        </div>
+        <div
+          class="slds-chat-message__meta"
+          onclick={handleDeleteThisMsg}
+          data-id={msgId}
+        >
+          {msgUser} • {localDate}
+        </div>
+      </div>
+    </div>
+  </li>
+</template>

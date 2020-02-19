@@ -1,7 +1,75 @@
 <template>
-  <lightning-card title="Github User Search">
+  <lightning-card title="Messages">
     <div class="slds-m-around_medium">
-      <p>hello world</p>
+      <lightning-layout vertical-align="end" class="slds-m-bottom_small">
+        <lightning-layout-item flexibility="grow" style="position: relative;">
+          <lightning-input
+            type="text"
+            onchange={handleInputMsg}
+            value={msgValue}
+            placeholder="Send a message..."
+          >
+          </lightning-input>
+          <button
+            onclick={handleSubmitNewMsg}
+            style="position: absolute;right: 0;bottom: 0;background-color: #1f0047;"
+            class="slds-button slds-button_brand"
+          >
+            Send
+          </button>
+        </lightning-layout-item>
+        <div class="slds-form-element slds-m-left_small">
+          <label class="slds-form-element__label" for="account_selector"
+            >Select account</label
+          >
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select
+                class="slds-select"
+                id="account_selector"
+                onchange={handleChangeCurrentUser}
+              >
+                <option value="001N000001u6rEBIAY">Luke Secomb</option>
+                <option value="001N000001u6rJaIAI">Soda Strategic</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </lightning-layout>
+
+      <section role="log" class="slds-chat">
+        <ul class="slds-chat-list">
+          <li class="slds-chat-listitem slds-chat-listitem_bookend">
+            <div class="slds-chat-bookend">
+              <span
+                class="slds-icon_container slds-icon-utility-chat slds-chat-icon"
+              >
+                <svg
+                  class="slds-icon slds-icon_x-small slds-icon-text-default"
+                  aria-hidden="true"
+                >
+                  <use
+                    xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chat"
+                  ></use>
+                </svg>
+              </span>
+              <p>Chat started by <b>Luke Secomb</b> • awhile ago</p>
+            </div>
+          </li>
+          <template for:each={msgData} for:item="msg">
+            <li key={msg.Id}>
+              <c-message-single
+                msg-id={msg.Id}
+                msg-text={msg.Name}
+                msg-date-time={msg.CreatedDate}
+                msg-user={msg.Account__r.Name}
+                msg-user-id={msg.Account__c}
+                ondeletethismsg={handleDeleteThisMsgParent}
+              ></c-message-single>
+            </li>
+          </template>
+        </ul>
+      </section>
 
       <template if:true={error}>
         <p>{error}</p>
