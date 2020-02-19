@@ -9,6 +9,11 @@
     "dx:open": "sfdx force:org:open -u luke-march-2020",
     "dx:push": "sfdx force:source:push",
     "dx:pull": "sfdx force:source:pull",
+    "dx:obj": "sfdx force:source:retrieve -m CustomField:Account.",
+    "dx:ls": "sfdx force:source:retrieve -m Layout",
+    "dx:pls": "sfdx force:source:retrieve -m FlexiPage",
+    "dx:msg": "sfdx force:source:retrieve -m CustomObject:Message__c",
+    "dx:msgFs": "sfdx force:source:retrieve -m CustomField:Message__c",
     "dx:retrieve": "sfdx force:source:retrieve -m LightningComponentBundle -u lukeDev"
   },
   "repository": {
