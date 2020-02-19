@@ -8,6 +8,8 @@ import getMyMessages from "@salesforce/apex/MessageController.getMyMessages";
 import getAllMessages from "@salesforce/apex/MessageController.getAllMessages";
 import sendMessage from "@salesforce/apex/MessageController.sendMessage";
 
+const SHOULD_WE_DISPLAY = false;
+
 const ACCT_LUKE = "001N000001u6rEBIAY";
 const ACCT_SODA = "001N000001u6rJaIAI";
 
@@ -16,6 +18,8 @@ export default class MessageViewer extends LightningElement {
   @track msgValue = "";
   @track msgData = [];
   @track error = null;
+
+  shouldWeDisplay = SHOULD_WE_DISPLAY;
   rawMessageRes;
 
   // WHERE THE MAGIC HAPPENS
