@@ -14,6 +14,7 @@
     "dx:pls": "sfdx force:source:retrieve -m FlexiPage",
     "dx:msg": "sfdx force:source:retrieve -m CustomObject:Message__c",
     "dx:msgFs": "sfdx force:source:retrieve -m CustomField:Message__c",
+    "dx:apx:msg": "sfdx force:apex:class:create -n MessageController -d force-app/main/default/classes",
     "dx:retrieve": "sfdx force:source:retrieve -m LightningComponentBundle -u lukeDev"
   },
   "repository": {

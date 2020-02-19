@@ -2,11 +2,7 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {
-            "c/githubAPI": [
-                "githubAPI/githubAPI.js"
-            ]
-        }
+        "paths": {}
     },
     "include": [
         "**/*",
