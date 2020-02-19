@@ -9,11 +9,7 @@
     "dx:open": "sfdx force:org:open -u luke-march-2020",
     "dx:push": "sfdx force:source:push",
     "dx:pull": "sfdx force:source:pull",
-    "dx:retrieve": "sfdx force:source:retrieve -m LightningComponentBundle -u lukeDev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:unit": "lwc-jest",
-    "test:unit:debug": "lwc-jest --debug",
-    "test:unit:watch": "lwc-jest --watch"
+    "dx:retrieve": "sfdx force:source:retrieve -m LightningComponentBundle -u lukeDev"
   },
   "repository": {
     "type": "git",
@@ -25,7 +21,5 @@
     "url": "https://github.com/lukethacoder/lwc-demo-2020/issues"
   },
   "homepage": "https://github.com/lukethacoder/lwc-demo-2020#readme",
-  "devDependencies": {
-    "@salesforce/lwc-jest": "^0.5.4"
-  }
+  "devDependencies": {}
 }
