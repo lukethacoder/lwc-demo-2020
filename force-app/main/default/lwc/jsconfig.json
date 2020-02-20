@@ -3,11 +3,14 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/messageViewer": [
-                "messageViewer/messageViewer.js"
+            "c/githubAPI": [
+                "githubAPI/githubAPI.js"
             ],
             "c/messageSingle": [
                 "messageSingle/messageSingle.js"
+            ],
+            "c/messageViewer": [
+                "messageViewer/messageViewer.js"
             ]
         }
     },

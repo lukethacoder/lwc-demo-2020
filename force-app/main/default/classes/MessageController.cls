@@ -1,8 +1,6 @@
 public with sharing class MessageController {
 
-    public class MessageException extends Exception {
-        // No implementation
-    }
+    public class MessageException extends Exception {}
     /*
 	* LWC @wire requires Cacheable=true flag
 	**/
